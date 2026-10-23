@@ -27,6 +27,26 @@
           "rol": "Predica",
           "nombre": "JUAN CARLOS",
           "estado": "Confirmado"
+        },
+        {
+          "rol": "Anotaciones",
+          "nombre": "FAM MARTELL AUSENTES",
+          "estado": "Programado"
+        }
+      ]
+    },
+    {
+      "fecha": "2026-09-05",
+      "asignaciones": [
+        {
+          "rol": "Anotaciones",
+          "nombre": "DIA DEL NIÑO EN LA PLAZA",
+          "estado": "Programado"
+        },
+        {
+          "rol": "Anotaciones",
+          "nombre": "FAM MARTELL AUSENTES",
+          "estado": "Programado"
         }
       ]
     },
@@ -57,6 +77,11 @@
           "rol": "Anuncios",
           "nombre": "LUCAS ALBERTO",
           "estado": "Confirmado"
+        },
+        {
+          "rol": "Anotaciones",
+          "nombre": "FAM MARTELL AUSENTES",
+          "estado": "Programado"
         }
       ]
     },
@@ -78,6 +103,16 @@
     {
       "fecha": "2026-09-11",
       "asignaciones": [
+        {
+          "rol": "Dirige",
+          "nombre": "",
+          "estado": "Pendiente"
+        },
+        {
+          "rol": "Predica",
+          "nombre": "",
+          "estado": "Pendiente"
+        },
         {
           "rol": "Santa Cena",
           "nombre": "CULTO ESPECIAL MUJERES EN MITRE",
@@ -156,6 +191,16 @@
       ]
     },
     {
+      "fecha": "2026-09-19",
+      "asignaciones": [
+        {
+          "rol": "Anotaciones",
+          "nombre": "CLUB BIBLICO",
+          "estado": "Programado"
+        }
+      ]
+    },
+    {
       "fecha": "2026-09-20",
       "asignaciones": [
         {
@@ -212,6 +257,11 @@
           "rol": "Predica",
           "nombre": "LUCAS ALBERTO",
           "estado": "Confirmado"
+        },
+        {
+          "rol": "Anotaciones",
+          "nombre": "PASTORES AUSENTES",
+          "estado": "Programado"
         }
       ]
     },
@@ -242,6 +292,11 @@
           "rol": "Anuncios",
           "nombre": "OSCAR",
           "estado": "Confirmado"
+        },
+        {
+          "rol": "Anotaciones",
+          "nombre": "PASTORES AUSENTES",
+          "estado": "Programado"
         }
       ]
     },
