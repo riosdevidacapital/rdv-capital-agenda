@@ -16,6 +16,16 @@
       ]
     },
     {
+      "fecha": "2026-10-03",
+      "asignaciones": [
+        {
+          "rol": "Anotaciones",
+          "nombre": "Octubrillante",
+          "estado": "Programado"
+        }
+      ]
+    },
+    {
       "fecha": "2026-10-04",
       "asignaciones": [
         {
@@ -42,6 +52,11 @@
           "rol": "Anuncios",
           "nombre": "Octavio Aldave",
           "estado": "Confirmado"
+        },
+        {
+          "rol": "Anotaciones",
+          "nombre": "Fam Prs. Rebrej Ausentes",
+          "estado": "Programado"
         }
       ]
     },
@@ -102,6 +117,11 @@
           "rol": "Anuncios",
           "nombre": "Oscar Martell",
           "estado": "Confirmado"
+        },
+        {
+          "rol": "Anotaciones",
+          "nombre": "Fam Prs. Rebrej Ausentes",
+          "estado": "Programado"
         }
       ]
     },
@@ -127,6 +147,21 @@
           "rol": "Dirige",
           "nombre": "Heidi Moreno",
           "estado": "Confirmado"
+        },
+        {
+          "rol": "Predica",
+          "nombre": "",
+          "estado": "Pendiente"
+        }
+      ]
+    },
+    {
+      "fecha": "2026-10-17",
+      "asignaciones": [
+        {
+          "rol": "Anotaciones",
+          "nombre": "Club Biblico",
+          "estado": "Programado"
         }
       ]
     },
@@ -157,6 +192,11 @@
           "rol": "Anuncios",
           "nombre": "Lucas Alberto",
           "estado": "Confirmado"
+        },
+        {
+          "rol": "Anotaciones",
+          "nombre": "Fam Prs. Rebrej Ausentes",
+          "estado": "Programado"
         }
       ]
     },
