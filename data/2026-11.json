@@ -4,13 +4,18 @@
       "fecha": "2026-11-01",
       "asignaciones": [
         {
+          "rol": "Dirige",
+          "nombre": "",
+          "estado": "Pendiente"
+        },
+        {
           "rol": "Predica",
           "nombre": "Pr. Roberto Mastraccio",
           "estado": "Pendiente"
         },
         {
           "rol": "Santa Cena",
-          "nombre": "Montse Pradas",
+          "nombre": "Alejandra y Montse",
           "estado": "Pendiente"
         },
         {
@@ -22,6 +27,11 @@
           "rol": "Anuncios",
           "nombre": "Oscar Martell",
           "estado": "Pendiente"
+        },
+        {
+          "rol": "Anotaciones",
+          "nombre": "Fam Aguilar Ausentes",
+          "estado": "Programado"
         }
       ]
     },
@@ -31,6 +41,26 @@
         {
           "rol": "Dirige",
           "nombre": "Rafael Aguilar",
+          "estado": "Pendiente"
+        },
+        {
+          "rol": "Predica",
+          "nombre": "",
+          "estado": "Pendiente"
+        }
+      ]
+    },
+    {
+      "fecha": "2026-11-06",
+      "asignaciones": [
+        {
+          "rol": "Dirige",
+          "nombre": "",
+          "estado": "Pendiente"
+        },
+        {
+          "rol": "Predica",
+          "nombre": "",
           "estado": "Pendiente"
         }
       ]
@@ -49,13 +79,18 @@
       "fecha": "2026-11-08",
       "asignaciones": [
         {
+          "rol": "Dirige",
+          "nombre": "",
+          "estado": "Pendiente"
+        },
+        {
           "rol": "Predica",
           "nombre": "Pr. Juan Carlos",
           "estado": "Pendiente"
         },
         {
           "rol": "Santa Cena",
-          "nombre": "Pr. Franci Tripodi",
+          "nombre": "Pr Franci y Pr Juan Carlos",
           "estado": "Pendiente"
         },
         {
@@ -77,6 +112,26 @@
           "rol": "Dirige",
           "nombre": "Gina",
           "estado": "Pendiente"
+        },
+        {
+          "rol": "Predica",
+          "nombre": "",
+          "estado": "Pendiente"
+        }
+      ]
+    },
+    {
+      "fecha": "2026-11-13",
+      "asignaciones": [
+        {
+          "rol": "Dirige",
+          "nombre": "",
+          "estado": "Pendiente"
+        },
+        {
+          "rol": "Predica",
+          "nombre": "",
+          "estado": "Pendiente"
         }
       ]
     },
@@ -93,6 +148,11 @@
     {
       "fecha": "2026-11-15",
       "asignaciones": [
+        {
+          "rol": "Dirige",
+          "nombre": "",
+          "estado": "Pendiente"
+        },
         {
           "rol": "Predica",
           "nombre": "Pedro Álvarez",
@@ -122,12 +182,37 @@
           "rol": "Dirige",
           "nombre": "Eva Sotelo",
           "estado": "Pendiente"
+        },
+        {
+          "rol": "Predica",
+          "nombre": "",
+          "estado": "Pendiente"
+        }
+      ]
+    },
+    {
+      "fecha": "2026-11-20",
+      "asignaciones": [
+        {
+          "rol": "Dirige",
+          "nombre": "",
+          "estado": "Pendiente"
+        },
+        {
+          "rol": "Predica",
+          "nombre": "",
+          "estado": "Pendiente"
         }
       ]
     },
     {
       "fecha": "2026-11-22",
       "asignaciones": [
+        {
+          "rol": "Dirige",
+          "nombre": "",
+          "estado": "Pendiente"
+        },
         {
           "rol": "Predica",
           "nombre": "Lucas Alberto",
@@ -157,6 +242,26 @@
           "rol": "Dirige",
           "nombre": "Gina",
           "estado": "Pendiente"
+        },
+        {
+          "rol": "Predica",
+          "nombre": "",
+          "estado": "Pendiente"
+        }
+      ]
+    },
+    {
+      "fecha": "2026-11-27",
+      "asignaciones": [
+        {
+          "rol": "Dirige",
+          "nombre": "",
+          "estado": "Pendiente"
+        },
+        {
+          "rol": "Predica",
+          "nombre": "",
+          "estado": "Pendiente"
         }
       ]
     },
@@ -173,6 +278,31 @@
     {
       "fecha": "2026-11-29",
       "asignaciones": [
+        {
+          "rol": "Dirige",
+          "nombre": "",
+          "estado": "Pendiente"
+        },
+        {
+          "rol": "Predica",
+          "nombre": "",
+          "estado": "Pendiente"
+        },
+        {
+          "rol": "Santa Cena",
+          "nombre": "",
+          "estado": "Pendiente"
+        },
+        {
+          "rol": "Ofrendas",
+          "nombre": "",
+          "estado": "Pendiente"
+        },
+        {
+          "rol": "Anuncios",
+          "nombre": "",
+          "estado": "Pendiente"
+        },
         {
           "rol": "Actividad",
           "nombre": "Retiro Anual RDV",
