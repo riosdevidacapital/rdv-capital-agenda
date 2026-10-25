@@ -5,7 +5,7 @@
       "asignaciones": [
         {
           "rol": "Dirige",
-          "nombre": "",
+          "nombre": "Lucas Llancabure",
           "estado": "Pendiente"
         },
         {
@@ -29,7 +29,12 @@
           "estado": "Pendiente"
         },
         {
-          "rol": "Anotaciones",
+          "rol": "Cierre",
+          "nombre": "",
+          "estado": "Pendiente"
+        },
+        {
+          "rol": "Actividad",
           "nombre": "Fam Aguilar Ausentes",
           "estado": "Programado"
         }
@@ -45,7 +50,7 @@
         },
         {
           "rol": "Predica",
-          "nombre": "",
+          "nombre": "Sergio Antimonik",
           "estado": "Pendiente"
         }
       ]
@@ -69,6 +74,16 @@
       "fecha": "2026-11-07",
       "asignaciones": [
         {
+          "rol": "Dirige",
+          "nombre": "",
+          "estado": "Pendiente"
+        },
+        {
+          "rol": "Predica",
+          "nombre": "",
+          "estado": "Pendiente"
+        },
+        {
           "rol": "Actividad",
           "nombre": "Reunión de Matrimonios",
           "estado": "Programado"
@@ -80,7 +95,7 @@
       "asignaciones": [
         {
           "rol": "Dirige",
-          "nombre": "",
+          "nombre": "Montse Pradas",
           "estado": "Pendiente"
         },
         {
@@ -102,6 +117,11 @@
           "rol": "Anuncios",
           "nombre": "Lucas Alberto",
           "estado": "Pendiente"
+        },
+        {
+          "rol": "Cierre",
+          "nombre": "",
+          "estado": "Pendiente"
         }
       ]
     },
@@ -115,7 +135,7 @@
         },
         {
           "rol": "Predica",
-          "nombre": "",
+          "nombre": "Pr. Ramón Aquino",
           "estado": "Pendiente"
         }
       ]
@@ -139,9 +159,19 @@
       "fecha": "2026-11-14",
       "asignaciones": [
         {
-          "rol": "Ofrendas",
-          "nombre": "BABY SHOWER DE IRENE",
+          "rol": "Dirige",
+          "nombre": "",
           "estado": "Pendiente"
+        },
+        {
+          "rol": "Predica",
+          "nombre": "",
+          "estado": "Pendiente"
+        },
+        {
+          "rol": "Actividad",
+          "nombre": "Baby Shower Irene",
+          "estado": "Programado"
         }
       ]
     },
@@ -150,7 +180,7 @@
       "asignaciones": [
         {
           "rol": "Dirige",
-          "nombre": "",
+          "nombre": "Ivana Alvarez",
           "estado": "Pendiente"
         },
         {
@@ -172,6 +202,11 @@
           "rol": "Anuncios",
           "nombre": "Octavio Aldave",
           "estado": "Pendiente"
+        },
+        {
+          "rol": "Cierre",
+          "nombre": "",
+          "estado": "Pendiente"
         }
       ]
     },
@@ -185,7 +220,7 @@
         },
         {
           "rol": "Predica",
-          "nombre": "",
+          "nombre": "Pr. Miguel Caracci",
           "estado": "Pendiente"
         }
       ]
@@ -206,11 +241,26 @@
       ]
     },
     {
-      "fecha": "2026-11-22",
+      "fecha": "2026-11-21",
       "asignaciones": [
         {
           "rol": "Dirige",
           "nombre": "",
+          "estado": "Pendiente"
+        },
+        {
+          "rol": "Predica",
+          "nombre": "",
+          "estado": "Pendiente"
+        }
+      ]
+    },
+    {
+      "fecha": "2026-11-22",
+      "asignaciones": [
+        {
+          "rol": "Dirige",
+          "nombre": "Rafael Aguilar",
           "estado": "Pendiente"
         },
         {
@@ -232,6 +282,11 @@
           "rol": "Anuncios",
           "nombre": "Oscar Martell",
           "estado": "Pendiente"
+        },
+        {
+          "rol": "Cierre",
+          "nombre": "",
+          "estado": "Pendiente"
         }
       ]
     },
@@ -245,7 +300,7 @@
         },
         {
           "rol": "Predica",
-          "nombre": "",
+          "nombre": "Juan Bravo",
           "estado": "Pendiente"
         }
       ]
@@ -268,6 +323,16 @@
     {
       "fecha": "2026-11-28",
       "asignaciones": [
+        {
+          "rol": "Dirige",
+          "nombre": "",
+          "estado": "Pendiente"
+        },
+        {
+          "rol": "Predica",
+          "nombre": "",
+          "estado": "Pendiente"
+        },
         {
           "rol": "Actividad",
           "nombre": "Retiro Anual RDV",
@@ -300,6 +365,11 @@
         },
         {
           "rol": "Anuncios",
+          "nombre": "",
+          "estado": "Pendiente"
+        },
+        {
+          "rol": "Cierre",
           "nombre": "",
           "estado": "Pendiente"
         },
