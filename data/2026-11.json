@@ -11,12 +11,12 @@
         {
           "rol": "Predica",
           "nombre": "Pr. Roberto Mastraccio",
-          "estado": "Informado"
+          "estado": "Pendiente"
         },
         {
           "rol": "Santa Cena",
           "nombre": "Alejandra y Montse",
-          "estado": "Informado"
+          "estado": "Pendiente"
         },
         {
           "rol": "Ofrendas",
@@ -106,7 +106,7 @@
         {
           "rol": "Santa Cena",
           "nombre": "Pr Franci y Pr Juan Carlos",
-          "estado": "Informado"
+          "estado": "Pendiente"
         },
         {
           "rol": "Ofrendas",
@@ -276,7 +276,7 @@
         {
           "rol": "Ofrendas",
           "nombre": "Ricardo Guemill",
-          "estado": "Informado"
+          "estado": "Pendiente"
         },
         {
           "rol": "Anuncios",
