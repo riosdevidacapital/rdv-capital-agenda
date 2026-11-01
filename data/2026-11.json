@@ -309,19 +309,14 @@
       "fecha": "2026-11-27",
       "asignaciones": [
         {
-          "rol": "Dirige",
-          "nombre": "",
-          "estado": "Pendiente"
+          "rol": "Actividad",
+          "nombre": "Retiro Anual RDV",
+          "estado": "Programado"
         },
         {
-          "rol": "Predica",
-          "nombre": "",
-          "estado": "Pendiente"
-        },
-        {
-          "rol": "Santa Cena",
-          "nombre": "NO HAY CULTO",
-          "estado": "Pendiente"
+          "rol": "Actividad",
+          "nombre": "Culto suspendido por retiro",
+          "estado": "Programado"
         }
       ]
     },
@@ -329,18 +324,13 @@
       "fecha": "2026-11-28",
       "asignaciones": [
         {
-          "rol": "Dirige",
-          "nombre": "",
-          "estado": "Pendiente"
-        },
-        {
-          "rol": "Predica",
-          "nombre": "",
-          "estado": "Pendiente"
+          "rol": "Actividad",
+          "nombre": "Retiro Anual RDV",
+          "estado": "Programado"
         },
         {
           "rol": "Actividad",
-          "nombre": "Retiro Anual RDV",
+          "nombre": "Culto suspendido por retiro",
           "estado": "Programado"
         }
       ]
@@ -349,38 +339,13 @@
       "fecha": "2026-11-29",
       "asignaciones": [
         {
-          "rol": "Dirige",
-          "nombre": "",
-          "estado": "Pendiente"
-        },
-        {
-          "rol": "Predica",
-          "nombre": "",
-          "estado": "Pendiente"
-        },
-        {
-          "rol": "Santa Cena",
-          "nombre": "",
-          "estado": "Pendiente"
-        },
-        {
-          "rol": "Ofrendas",
-          "nombre": "",
-          "estado": "Pendiente"
-        },
-        {
-          "rol": "Anuncios",
-          "nombre": "",
-          "estado": "Pendiente"
-        },
-        {
-          "rol": "Cierre",
-          "nombre": "",
-          "estado": "Pendiente"
+          "rol": "Actividad",
+          "nombre": "Retiro Anual RDV",
+          "estado": "Programado"
         },
         {
           "rol": "Actividad",
-          "nombre": "Retiro Anual RDV",
+          "nombre": "Culto en Chiclana suspendido",
           "estado": "Programado"
         }
       ]
