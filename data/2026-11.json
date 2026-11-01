@@ -6,27 +6,27 @@
         {
           "rol": "Dirige",
           "nombre": "Lucas Llancabure",
-          "estado": "Informado"
+          "estado": "Confirmado"
         },
         {
           "rol": "Predica",
           "nombre": "Pr. Roberto Mastraccio",
-          "estado": "Pendiente"
+          "estado": "Confirmado"
         },
         {
           "rol": "Santa Cena",
           "nombre": "Alejandra y Montse",
-          "estado": "Pendiente"
+          "estado": "Confirmado"
         },
         {
           "rol": "Ofrendas",
           "nombre": "Oscar Martell",
-          "estado": "Informado"
+          "estado": "Confirmado"
         },
         {
           "rol": "Anuncios",
           "nombre": "Oscar Martell",
-          "estado": "Informado"
+          "estado": "Confirmado"
         },
         {
           "rol": "Cierre",
@@ -36,7 +36,7 @@
         {
           "rol": "Actividad",
           "nombre": "Fam Aguilar Ausentes",
-          "estado": "Programado"
+          "estado": "Confirmado"
         }
       ]
     },
