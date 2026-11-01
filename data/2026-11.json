@@ -310,12 +310,7 @@
       "asignaciones": [
         {
           "rol": "Actividad",
-          "nombre": "Retiro Anual RDV",
-          "estado": "Programado"
-        },
-        {
-          "rol": "Actividad",
-          "nombre": "Culto suspendido por retiro",
+          "nombre": "Culto en Chiclana suspendido",
           "estado": "Programado"
         }
       ]
