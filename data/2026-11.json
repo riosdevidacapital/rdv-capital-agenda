@@ -310,7 +310,7 @@
       "asignaciones": [
         {
           "rol": "Actividad",
-          "nombre": "Culto en Chiclana suspendido",
+          "nombre": "Culto en Chiclana suspendido por Retiro",
           "estado": "Programado"
         }
       ]
@@ -325,7 +325,7 @@
         },
         {
           "rol": "Actividad",
-          "nombre": "Culto suspendido por retiro",
+          "nombre": "Culto de Jóvenes suspendido por Retiro",
           "estado": "Programado"
         }
       ]
@@ -340,7 +340,7 @@
         },
         {
           "rol": "Actividad",
-          "nombre": "Culto en Chiclana suspendido",
+          "nombre": "Culto en Chiclana suspendido por Retiro",
           "estado": "Programado"
         }
       ]
