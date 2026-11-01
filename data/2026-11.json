@@ -65,7 +65,7 @@
         },
         {
           "rol": "Predica",
-          "nombre": "",
+          "nombre": "Oscar Martell",
           "estado": "Pendiente"
         }
       ]
@@ -150,7 +150,7 @@
         },
         {
           "rol": "Predica",
-          "nombre": "",
+          "nombre": "Pr. Juan Carlos",
           "estado": "Pendiente"
         }
       ]
@@ -235,7 +235,7 @@
         },
         {
           "rol": "Predica",
-          "nombre": "",
+          "nombre": "Pr. Juan Carlos",
           "estado": "Pendiente"
         }
       ]
@@ -316,6 +316,11 @@
         {
           "rol": "Predica",
           "nombre": "",
+          "estado": "Pendiente"
+        },
+        {
+          "rol": "Santa Cena",
+          "nombre": "NO HAY CULTO",
           "estado": "Pendiente"
         }
       ]
