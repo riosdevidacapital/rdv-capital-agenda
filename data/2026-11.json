@@ -6,27 +6,27 @@
         {
           "rol": "Dirige",
           "nombre": "Lucas Llancabure",
-          "estado": "Pendiente"
+          "estado": "Informado"
         },
         {
           "rol": "Predica",
           "nombre": "Pr. Roberto Mastraccio",
-          "estado": "Pendiente"
+          "estado": "Informado"
         },
         {
           "rol": "Santa Cena",
           "nombre": "Alejandra y Montse",
-          "estado": "Pendiente"
+          "estado": "Informado"
         },
         {
           "rol": "Ofrendas",
           "nombre": "Oscar Martell",
-          "estado": "Pendiente"
+          "estado": "Informado"
         },
         {
           "rol": "Anuncios",
           "nombre": "Oscar Martell",
-          "estado": "Pendiente"
+          "estado": "Informado"
         },
         {
           "rol": "Cierre",
@@ -46,7 +46,7 @@
         {
           "rol": "Dirige",
           "nombre": "Rafael Aguilar",
-          "estado": "Pendiente"
+          "estado": "Informado"
         },
         {
           "rol": "Predica",
@@ -61,12 +61,12 @@
         {
           "rol": "Dirige",
           "nombre": "Cristian Lopez",
-          "estado": "Pendiente"
+          "estado": "Informado"
         },
         {
           "rol": "Predica",
           "nombre": "Oscar Martell",
-          "estado": "Pendiente"
+          "estado": "Informado"
         }
       ]
     },
@@ -96,27 +96,27 @@
         {
           "rol": "Dirige",
           "nombre": "Montse Pradas",
-          "estado": "Pendiente"
+          "estado": "Informado"
         },
         {
           "rol": "Predica",
           "nombre": "Pr. Juan Carlos",
-          "estado": "Pendiente"
+          "estado": "Informado"
         },
         {
           "rol": "Santa Cena",
           "nombre": "Pr Franci y Pr Juan Carlos",
-          "estado": "Pendiente"
+          "estado": "Informado"
         },
         {
           "rol": "Ofrendas",
           "nombre": "Lucas Alberto",
-          "estado": "Pendiente"
+          "estado": "Informado"
         },
         {
           "rol": "Anuncios",
           "nombre": "Lucas Alberto",
-          "estado": "Pendiente"
+          "estado": "Informado"
         },
         {
           "rol": "Cierre",
@@ -131,7 +131,7 @@
         {
           "rol": "Dirige",
           "nombre": "Gina",
-          "estado": "Pendiente"
+          "estado": "Informado"
         },
         {
           "rol": "Predica",
@@ -146,12 +146,12 @@
         {
           "rol": "Dirige",
           "nombre": "Marcos Alvarez",
-          "estado": "Pendiente"
+          "estado": "Informado"
         },
         {
           "rol": "Predica",
           "nombre": "Pr. Juan Carlos",
-          "estado": "Pendiente"
+          "estado": "Informado"
         }
       ]
     },
@@ -181,7 +181,7 @@
         {
           "rol": "Dirige",
           "nombre": "Ivana Alvarez",
-          "estado": "Pendiente"
+          "estado": "Informado"
         },
         {
           "rol": "Predica",
@@ -191,17 +191,17 @@
         {
           "rol": "Santa Cena",
           "nombre": "Matrimonio Lopez",
-          "estado": "Pendiente"
+          "estado": "Informado"
         },
         {
           "rol": "Ofrendas",
           "nombre": "Octavio Aldave",
-          "estado": "Pendiente"
+          "estado": "Informado"
         },
         {
           "rol": "Anuncios",
           "nombre": "Octavio Aldave",
-          "estado": "Pendiente"
+          "estado": "Informado"
         },
         {
           "rol": "Cierre",
@@ -216,7 +216,7 @@
         {
           "rol": "Dirige",
           "nombre": "Eva Sotelo",
-          "estado": "Pendiente"
+          "estado": "Informado"
         },
         {
           "rol": "Predica",
@@ -231,12 +231,12 @@
         {
           "rol": "Dirige",
           "nombre": "Montse Pradas",
-          "estado": "Pendiente"
+          "estado": "Informado"
         },
         {
           "rol": "Predica",
           "nombre": "Pr. Juan Carlos",
-          "estado": "Pendiente"
+          "estado": "Informado"
         }
       ]
     },
@@ -261,27 +261,27 @@
         {
           "rol": "Dirige",
           "nombre": "Rafael Aguilar",
-          "estado": "Pendiente"
+          "estado": "Informado"
         },
         {
           "rol": "Predica",
           "nombre": "Lucas Alberto",
-          "estado": "Pendiente"
+          "estado": "Informado"
         },
         {
           "rol": "Santa Cena",
           "nombre": "Matrimonio Llancabure",
-          "estado": "Pendiente"
+          "estado": "Informado"
         },
         {
           "rol": "Ofrendas",
           "nombre": "Ricardo Guemill",
-          "estado": "Pendiente"
+          "estado": "Informado"
         },
         {
           "rol": "Anuncios",
           "nombre": "Oscar Martell",
-          "estado": "Pendiente"
+          "estado": "Informado"
         },
         {
           "rol": "Cierre",
@@ -296,7 +296,7 @@
         {
           "rol": "Dirige",
           "nombre": "Gina",
-          "estado": "Pendiente"
+          "estado": "Informado"
         },
         {
           "rol": "Predica",
