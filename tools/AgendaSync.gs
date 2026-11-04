@@ -109,9 +109,12 @@ function construirMesRDV_(sheet, year, month) {
         });
       }
       for (let offset = 7; offset <= 9 && header + offset < rows.length; offset++) {
-        const name = (rows[header + offset][col] || '').trim();
-        if (!name) continue;
-        assignments.push({rol: 'Actividad', nombre: name, estado: 'Programado'});
+        // Las anotaciones pueden estar en cualquiera de las dos columnas del día.
+        for (let activityCol = col; activityCol <= col + 1; activityCol++) {
+          const name = (rows[header + offset][activityCol] || '').trim();
+          if (!name || assignments.some(a => a.rol === 'Actividad' && a.nombre === name)) continue;
+          assignments.push({rol: 'Actividad', nombre: name, estado: 'Programado'});
+        }
       }
       if (assignments.length) {
         found.set(day, {
