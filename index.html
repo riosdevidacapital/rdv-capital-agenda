@@ -79,7 +79,7 @@ participantPicker.addEventListener('change',()=>{showParticipant();if(!participa
 copyActivities.addEventListener('click',async()=>{
   const text=participantText;if(!text)return;
   copyActivities.disabled=true;
-  try{await navigator.clipboard.writeText(text);if(participantText===text)copyFeedback.textContent='Actividades copiadas.'}
+  try{await navigator.clipboard.writeText(text);if(participantText===text){participantPicker.value='';showParticipant();participantPicker.blur()}}
   catch(error){if(participantText===text){copyFallback.value=text;copyFallback.hidden=false;copyFallback.focus();copyFallback.select();copyFeedback.textContent='Seleccioná y copiá este texto.'}}
   finally{copyActivities.disabled=false}
 });
