@@ -164,7 +164,7 @@ function groupParticipants(days){
     }
   }
   for(const group of groups.values())group.activities.sort((a,b)=>a.date.localeCompare(b.date));
-  return new Map([...groups].sort((a,b)=>a[1].name.localeCompare(b[1].name,'es')));
+  return new Map([...groups].filter(([key])=>!key.startsWith('matrimonio ')||['matrimonio guemill','matrimonio guemil','matrimonio pineiro'].includes(key)).sort((a,b)=>a[1].name.localeCompare(b[1].name,'es')));
 }
 const participantPicker=document.getElementById('participant'),participantResult=document.getElementById('participant-result'),participantTitle=document.getElementById('participant-title'),participantActivities=document.getElementById('participant-activities'),copyActivities=document.getElementById('copy-activities'),copyFeedback=document.getElementById('copy-feedback'),copyFallback=document.getElementById('copy-fallback');
 let participantGroups=new Map(),participantMonth='',participantText='',closeParticipantTimer,toastTimer;
