@@ -163,6 +163,23 @@ function groupParticipants(days){
       }
     }
   }
+  // Asignaciones conjuntas confirmadas: se suman al listado individual.
+  const sharedRelations=[
+    {source:'Alejandra y Montse',members:['Montse Pradas']},
+    {source:'Pr Franci y Pr Juan Carlos',members:['Pr. Juan Carlos']}
+  ];
+  for(const relation of sharedRelations){
+    const shared=groups.get(normalizedName(relation.source));
+    if(!shared)continue;
+    for(const memberName of relation.members){
+      const key=normalizedName(memberName);
+      if(!groups.has(key))groups.set(key,{name:memberName,activities:[]});
+      const member=groups.get(key);
+      for(const activity of shared.activities){
+        if(!member.activities.some(a=>a.date===activity.date&&a.role===activity.role))member.activities.push({...activity,sharedAssignment:shared.name});
+      }
+    }
+  }
   for(const group of groups.values())group.activities.sort((a,b)=>a.date.localeCompare(b.date));
   return new Map([...groups].filter(([key])=>!key.startsWith('matrimonio ')||['matrimonio guemill','matrimonio guemil','matrimonio pineiro'].includes(key)).sort((a,b)=>a[1].name.localeCompare(b[1].name,'es')));
 }
@@ -175,7 +192,7 @@ function resetParticipants(label){
   participantGroups=new Map();participantText='';participantPicker.replaceChildren(el('option','',label));participantPicker.options[0].value='';participantPicker.disabled=true;
   participantResult.hidden=true;copyFeedback.textContent='';copyFallback.hidden=true;
 }
-function activityLine(activity){return new Intl.DateTimeFormat('es-AR',{weekday:'long',day:'numeric',month:'numeric',year:'numeric'}).format(new Date(activity.date+'T12:00:00'))+' — '+activity.role+(activity.marriage?' ('+activity.marriage+')':'')}
+function activityLine(activity){return new Intl.DateTimeFormat('es-AR',{weekday:'long',day:'numeric',month:'numeric',year:'numeric'}).format(new Date(activity.date+'T12:00:00'))+' — '+activity.role+((activity.marriage||activity.sharedAssignment)?' ('+(activity.marriage||activity.sharedAssignment)+')':'')}
 function updateParticipants(days){
   const selected=participantMonth===selectedMonth?participantPicker.value:'';
   participantMonth=selectedMonth;participantGroups=groupParticipants(days);
