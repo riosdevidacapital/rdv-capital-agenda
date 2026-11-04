@@ -136,7 +136,7 @@
         {
           "rol": "Predica",
           "nombre": "Pr. Ramón Aquino",
-          "estado": "Pendiente"
+          "estado": "Confirmado"
         }
       ]
     },
@@ -301,7 +301,7 @@
         {
           "rol": "Predica",
           "nombre": "Juan Bravo",
-          "estado": "Confirmado"
+          "estado": "Pendiente"
         }
       ]
     },
