@@ -137,11 +137,21 @@ const coupleRelations=[
     ]
   }
 ];
+const participantAliases={
+  'lucas':'Lucas Alberto',
+  'javier':'Javier Agreda',
+  'liliana':'Liliana Etchepare',
+  'maqui':'Maqui Cevasco',
+  'alejandra':'Pra. Alejandra',
+  'franci':'Pr. Franci Tripodi',
+  'pr franci':'Pr. Franci Tripodi',
+  'pr. franci':'Pr. Franci Tripodi'
+};
 function groupParticipants(days){
   const groups=new Map();
   for(const day of days)for(const assignment of day.asignaciones||[]){
-    const name=String(assignment.nombre||'').trim().replace(/\s+/g,' '),role=String(assignment.rol||'').trim();
-    if(!name||!role||['actividad','anotaciones'].includes(role.toLowerCase())||['pendiente','por completar'].includes(normalizedName(name)))continue;
+    const rawName=String(assignment.nombre||'').trim().replace(/\s+/g,' '),name=participantAliases[normalizedName(rawName)]||rawName,role=String(assignment.rol||'').trim();
+    if(!name||!role||['actividad','anotaciones'].includes(role.toLowerCase())||['pendiente','por completar','tu refugio'].includes(normalizedName(name)))continue;
     const key=normalizedName(name);
     if(!groups.has(key))groups.set(key,{name,activities:[]});
     const entries=groups.get(key).activities;
@@ -165,8 +175,10 @@ function groupParticipants(days){
   }
   // Asignaciones conjuntas confirmadas: se suman al listado individual.
   const sharedRelations=[
-    {source:'Alejandra y Montse',members:['Montse Pradas']},
-    {source:'Pr Franci y Pr Juan Carlos',members:['Pr. Juan Carlos']}
+    {source:'Alejandra y Montse',members:['Pra. Alejandra','Montse Pradas']},
+    {source:'Pr Franci y Pr Juan Carlos',members:['Pr. Franci Tripodi','Pr. Juan Carlos']},
+    {source:'Lucas y Javier',members:['Lucas Alberto','Javier Agreda']},
+    {source:'Liliana y Maqui',members:['Liliana Etchepare','Maqui Cevasco']}
   ];
   for(const relation of sharedRelations){
     const shared=groups.get(normalizedName(relation.source));
