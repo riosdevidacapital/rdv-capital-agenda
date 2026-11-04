@@ -31,12 +31,12 @@
         {
           "rol": "Cierre",
           "nombre": "",
-          "estado": "Pendiente"
+          "estado": "Informado"
         },
         {
           "rol": "Actividad",
           "nombre": "Fam Aguilar Ausentes",
-          "estado": "Confirmado"
+          "estado": "Programado"
         }
       ]
     },
@@ -61,12 +61,12 @@
         {
           "rol": "Dirige",
           "nombre": "Cristian Lopez",
-          "estado": "Informado"
+          "estado": "Confirmado"
         },
         {
           "rol": "Predica",
           "nombre": "Oscar Martell",
-          "estado": "Informado"
+          "estado": "Confirmado"
         }
       ]
     },
@@ -106,7 +106,7 @@
         {
           "rol": "Santa Cena",
           "nombre": "Pr Franci y Pr Juan Carlos",
-          "estado": "Pendiente"
+          "estado": "Informado"
         },
         {
           "rol": "Ofrendas",
@@ -131,7 +131,7 @@
         {
           "rol": "Dirige",
           "nombre": "Gina",
-          "estado": "Informado"
+          "estado": "Confirmado"
         },
         {
           "rol": "Predica",
@@ -146,7 +146,7 @@
         {
           "rol": "Dirige",
           "nombre": "Marcos Alvarez",
-          "estado": "Informado"
+          "estado": "Pendiente"
         },
         {
           "rol": "Predica",
@@ -191,7 +191,7 @@
         {
           "rol": "Santa Cena",
           "nombre": "Matrimonio Lopez",
-          "estado": "Informado"
+          "estado": "Confirmado"
         },
         {
           "rol": "Ofrendas",
@@ -221,7 +221,7 @@
         {
           "rol": "Predica",
           "nombre": "Pr. Miguel Caracci",
-          "estado": "Pendiente"
+          "estado": "Confirmado"
         }
       ]
     },
@@ -306,26 +306,11 @@
       ]
     },
     {
-      "fecha": "2026-11-27",
-      "asignaciones": [
-        {
-          "rol": "Actividad",
-          "nombre": "Culto en Chiclana suspendido por Retiro",
-          "estado": "Programado"
-        }
-      ]
-    },
-    {
       "fecha": "2026-11-28",
       "asignaciones": [
         {
           "rol": "Actividad",
           "nombre": "Retiro Anual RDV",
-          "estado": "Programado"
-        },
-        {
-          "rol": "Actividad",
-          "nombre": "Culto de Jóvenes suspendido por Retiro",
           "estado": "Programado"
         }
       ]
@@ -340,7 +325,7 @@
         },
         {
           "rol": "Actividad",
-          "nombre": "Culto en Chiclana suspendido por Retiro",
+          "nombre": "Culto en Chiclana suspendido",
           "estado": "Programado"
         }
       ]
