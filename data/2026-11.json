@@ -306,6 +306,16 @@
       ]
     },
     {
+      "fecha": "2026-11-27",
+      "asignaciones": [
+        {
+          "rol": "Actividad",
+          "nombre": "Culto en Chiclana suspendido por Retiro",
+          "estado": "Programado"
+        }
+      ]
+    },
+    {
       "fecha": "2026-11-28",
       "asignaciones": [
         {
