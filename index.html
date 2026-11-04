@@ -32,7 +32,62 @@ function updateStickyHeights(){document.documentElement.style.setProperty('--hea
 window.addEventListener('resize',updateStickyHeights);updateStickyHeights();
 let firstLoad=true;
 function scrollToCurrentDay(){const cards=[...events.querySelectorAll('.card[data-date]')];const current=localDateKey(new Date());const target=cards.find(c=>c.dataset.date===current)||cards.find(c=>c.dataset.date>current)||cards[cards.length-1];if(target)requestAnimationFrame(()=>target.scrollIntoView({behavior:'instant',block:'start'}))}
-async function load(){const shouldFocus=firstLoad;firstLoad=false;events.replaceChildren();message.hidden=false;message.textContent='Cargando agenda…';try{const response=await fetch('./data/'+picker.value+'.json',{cache:'no-store'});if(response.status===404){message.textContent='Este mes todavía no fue publicado.';return}if(!response.ok)throw Error('HTTP');const data=await response.json();render((data.dias||[]).map(d=>({...d,isoFecha:d.fecha,fecha:new Intl.DateTimeFormat('es-AR',{weekday:'long',day:'numeric',month:'long'}).format(new Date(d.fecha+'T12:00:00'))})));if(shouldFocus){updateStickyHeights();scrollToCurrentDay()}}catch(e){message.textContent='No se pudo cargar la agenda. Intentá nuevamente más tarde.'}}
+const SHEET_ID='1R6EQWKFzXlNKZ4KNwNWMCCeY-DYbrw3E0NrLTZogWgk';
+const agendaRoles=['Dirige','Predica','Santa Cena','Ofrendas','Anuncios','Cierre'];
+function parseSheetAgenda(table,monthKey){
+  if(!Array.isArray(table?.rows))throw Error('Respuesta de Sheets inválida');
+  const rows=table.rows.map(row=>Array.from({length:16},(_,i)=>String(row.c?.[i]?.f??row.c?.[i]?.v??'').trim()));
+  while(rows.length<64)rows.push(Array(16).fill(''));
+  const [year,month]=monthKey.split('-').map(Number),days=new Map();
+  let headers=0;
+  for(let r=0;r<rows.length;r++)for(let col=1;col<=13;col+=2){
+    if(!/^\d{1,2}$/.test(rows[r][col]))continue;
+    const day=Number(rows[r][col]),date=new Date(year,month-1,day,12);
+    if(day<1||date.getMonth()!==month-1||date.getDay()!==((col-1)/2+1)%7||r+9>=rows.length)continue;
+    headers++;
+    const asignaciones=[];
+    for(let offset=1;offset<=6;offset++){
+      const nombre=rows[r+offset][col],raw=rows[r+offset][col+1];
+      if(!nombre&&!raw)continue;
+      const estado=/confirm/i.test(raw)?'Confirmado':/inform/i.test(raw)?'Informado':'Pendiente';
+      asignaciones.push({rol:agendaRoles[offset-1],nombre,estado});
+    }
+    for(let offset=7;offset<=9;offset++)for(let c=col;c<=col+1;c++){
+      const nombre=rows[r+offset][c];
+      if(nombre&&!asignaciones.some(a=>a.rol==='Actividad'&&a.nombre===nombre))asignaciones.push({rol:'Actividad',nombre,estado:'Programado'});
+    }
+    if(asignaciones.length)days.set(day,{fecha:monthKey+'-'+String(day).padStart(2,'0'),asignaciones});
+  }
+  if(!headers)throw Error('No se encontró la estructura mensual');
+  return {dias:[...days.entries()].sort((a,b)=>a[0]-b[0]).map(([,day])=>day)};
+}
+async function readSheetAgenda(monthKey){
+  const [year,month]=monthKey.split('-');
+  const params=new URLSearchParams({sheet:month+'-'+year,range:'A1:P64',headers:'0',tqx:'out:json',_ :String(Date.now())});
+  const response=await fetch('https://docs.google.com/spreadsheets/d/'+SHEET_ID+'/gviz/tq?'+params,{cache:'no-store',credentials:'omit',signal:AbortSignal.timeout(20000)});
+  if(!response.ok)throw Error('Sheets HTTP '+response.status);
+  const text=await response.text(),start=text.indexOf('{'),end=text.lastIndexOf('}');
+  if(start<0||end<start)throw Error('Respuesta de Sheets inválida');
+  const data=JSON.parse(text.slice(start,end+1));
+  if(data.status==='error')throw Error('Mes no disponible en Sheets');
+  return parseSheetAgenda(data.table,monthKey);
+}
+let loadVersion=0;
+async function load(){
+  const version=++loadVersion,monthKey=picker.value,shouldFocus=firstLoad;
+  message.hidden=false;message.textContent='Cargando agenda…';
+  try{
+    const data=await readSheetAgenda(monthKey);
+    if(version!==loadVersion)return;
+    render(data.dias.map(d=>({...d,isoFecha:d.fecha,fecha:new Intl.DateTimeFormat('es-AR',{weekday:'long',day:'numeric',month:'long'}).format(new Date(d.fecha+'T12:00:00'))})));
+    firstLoad=false;
+    if(shouldFocus){updateStickyHeights();scrollToCurrentDay()}
+  }catch(error){
+    if(version!==loadVersion)return;
+    events.replaceChildren();message.hidden=false;message.textContent='No se pudo consultar este mes en Google Sheets. Intentá nuevamente más tarde.';
+    console.error('Agenda: no se pudo actualizar desde Sheets',error);
+  }
+}
 const prevMonth=document.getElementById('prev-month'),nextMonth=document.getElementById('next-month'),monthLabel=document.getElementById('month-label');
 function updateMonthNav(){const i=allowed.indexOf(picker.value);prevMonth.disabled=i<=0;nextMonth.disabled=i<0||i>=allowed.length-1;monthLabel.textContent=picker.selectedOptions[0]?.textContent||''}
 function navigateMonth(delta){const i=allowed.indexOf(picker.value)+delta;if(i<0||i>=allowed.length)return;picker.value=allowed[i];updateMonthNav();load();document.querySelector('main').scrollIntoView({behavior:'smooth',block:'start'})}
