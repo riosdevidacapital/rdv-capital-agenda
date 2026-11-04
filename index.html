@@ -39,4 +39,6 @@ function navigateMonth(delta){const i=allowed.indexOf(picker.value)+delta;if(i<0
 prevMonth.addEventListener('click',()=>navigateMonth(-1));nextMonth.addEventListener('click',()=>navigateMonth(1));
 picker.addEventListener('change',()=>{updateMonthNav();load()});updateMonthNav();
 load();
+// Mientras la web permanezca abierta, vuelve a leer los datos cada 10 minutos.
+setInterval(load, 10 * 60 * 1000);
 </script></body></html>
