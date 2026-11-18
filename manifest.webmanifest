@@ -1,0 +1,19 @@
+{
+  "id": "./",
+  "name": "Agenda Río de Vida",
+  "short_name": "Agenda RDV",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f3f6fa",
+  "theme_color": "#0878bd",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "./app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
